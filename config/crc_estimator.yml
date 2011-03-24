@@ -1,0 +1,26 @@
+DEFAULTS: &DEFAULTS
+ application_name: crc_estimator
+ protocol: http
+
+development:
+ <<: *DEFAULTS
+ api_server: api-stage.carboncalculated.com
+ api_key: 4239f3c95f0cf518a034373c4afb6167538c3775
+
+test:
+ <<: *DEFAULTS
+ host: localhost.com
+ protocol: "http"
+ api_server: api-stage.carboncalculated.com
+ api_key: 4239f3c95f0cf518a034373c4afb6167538c3775
+
+production:
+ <<: *DEFAULTS
+ api_server: api.carboncalculated.com
+ api_key: 
+
+staging:
+ <<: *DEFAULTS
+ api_server: api-stage.carboncalculated.com
+ api_key: 
+ 

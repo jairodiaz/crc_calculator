@@ -1,0 +1,5 @@
+logger('server responding:');
+- @results.each_pair do |key, value|
+  = puts "key: #{key} value: #{value}"
+  $("##{key}").html("#{sprintf("%.6f",value)}");
+$("#total_result").html("#{sprintf("%.6f",@total_result)}");

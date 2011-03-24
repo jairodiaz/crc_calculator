@@ -1,0 +1,10 @@
+%h2
+  Welcome to the Crc Estimator
+
+=form_for @crc_calculator, :url => crc_calculators_path, :html => {:id => 'crc_calculators_form' } do |form| #, :remote => true
+  =render :partial => "/shared/errors_for", :locals => {:resource => @crc_calculator}
+  =render :partial => "form", :locals => {:form => form}
+  %br
+  %input{:type => "submit", :value => "Calculate", :class => "submit"}
+=form_tag "/crc_calculators/show_liability", :id => 'crc_calculators_form_liability'  do |form|
+  %input{:type => "submit", :value => "Calculate Liability", :class => "submit"}
