@@ -3,4 +3,4 @@
 This is an application that computes the CRC emissions of given energy supplies. 
 It is used to estimate the liability cost of CRC fuel emissions accordingly to UK regulations.
 
-The application is based on the CarbonCalculated API by Dynamic50 in London, UK.
+The application is based on the CarbonCalculated API by Carbon Calculated in London, UK.
